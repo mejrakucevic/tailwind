@@ -4,15 +4,13 @@ import "./style.css";
 function Main() {
   return (
     <body>
-      <div>
-        <div className="container">
+      <div className="container">
+        <div className="flex-column justify-center text-center items-center">
           <h1 className="text-white underline font-bold text-6xl">
-            The last of us
+            HLLO WORLD
           </h1>
-          <button className="bg-yellow-950 hover:bg-white">Start</button>
-          <h1 className="bg-yellow-950 text-white font-bold p-2 w-40 h-10 text-center ">
-            Joel
-          </h1>
+          <button className="btn btn-blue mx-6">Find Friends</button>
+          <button className="btn btn-blue  mx-6">Find Groups</button>
         </div>
       </div>
     </body>

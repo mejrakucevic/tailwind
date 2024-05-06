@@ -7,7 +7,18 @@ module.exports = {
     "./src/App.css",
   ],
   theme: {
-    extend: {},
+    container: {
+      center: true,
+      padding: "2rem",
+    },
   },
   plugins: [],
+  "tailwindCSS.includeLanguages": {
+    html: "html",
+    javascript: "javascript",
+    css: "css",
+  },
+  "editor.quickSuggestions": {
+    strings: true,
+  },
 };
