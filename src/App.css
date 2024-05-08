@@ -7,5 +7,5 @@
 }
 
 .btn-blue {
-  @apply bg-blue-950 hover:bg-white text-7xl p-5;
+  @apply bg-stone-800 hover:bg-white text-7xl p-5 hover:text-stone-950;
 }
