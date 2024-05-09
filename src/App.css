@@ -9,3 +9,13 @@
 .btn-blue {
   @apply bg-stone-800 hover:bg-white text-7xl p-5 hover:text-stone-950;
 }
+
+.vingette {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 800px 150px rgba(0, 0, 0, 0.9) inset;
+  opacity: 0.8;
+}

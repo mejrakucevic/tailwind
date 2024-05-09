@@ -11,6 +11,12 @@ module.exports = {
       center: true,
       padding: "2rem",
     },
+    extend: {
+      backgroundImage: {
+        "hero-pattern": "url('./pics/tlou1.jpg')",
+        "footer-texture": "url('/img/footer-texture.png')",
+      },
+    },
   },
   plugins: [],
   "tailwindCSS.includeLanguages": {
