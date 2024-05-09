@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .btn {
   @apply py-2 px-2 rounded;
 }
@@ -18,4 +27,12 @@
   height: 100%;
   box-shadow: 0 0 800px 150px rgba(0, 0, 0, 0.9) inset;
   opacity: 0.8;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.fontForParagraph {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
 }

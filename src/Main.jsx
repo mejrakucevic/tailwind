@@ -40,14 +40,28 @@ function Main() {
           </div>
         </div>
       </nav>
-      <div className="container text-stone-200 flex flex-col w-10">
-        <h1>The Last Of Us</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas officia
-          vitae, illum error iste ut beatae modi quidem aperiam cum dolor illo
-          voluptatem aliquam consectetur nulla officiis asperiores dolores
-          corrupti?
-        </p>
+      <div className="container h-screen flex justify-left items-center">
+        <div className="mb-80 text-stone-200 text-2xl">
+          <h1 className="text-5xl font-bold mb-5">The Last Of Us</h1>
+          <p className="fontForParagraph leading-relaxed">
+            Experience the emotional storytelling and unforgettable characters
+            <br /> in The Last of Us™, winner of over 200 Game of the Year
+            awards. <br />
+            In a ravaged civilization, where infected and hardened survivors run
+            rampant, Joel, <br /> a weary protagonist, is hired to smuggle
+            14-year-old Ellie out of a military quarantine zone. <br /> However,{" "}
+            what starts as a small job soon transforms into a brutal
+            cross-country journey.
+          </p>
+        </div>
+
+        <div className="paginationButtons bg-slate-100">
+          <button>a</button>
+          <button>a</button>
+          <button>a</button>
+          <button>a</button>
+        </div>
+
         {/* <div className="flex-column justify-center text-center items-center">
           <h1 className="text-white underline font-bold text-6xl">
             The Last Of Us
