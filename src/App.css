@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* background-image: url("./pics/tlou1.jpg"); */
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 @keyframes fadeInAnimation {
   0% {
     opacity: 0;
@@ -9,6 +25,25 @@
   100% {
     opacity: 1;
   }
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(41 37 36);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(87 83 78);
 }
 
 .btn {
@@ -20,19 +55,23 @@
 }
 
 .vingette {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 800px 150px rgba(0, 0, 0, 0.9) inset;
   opacity: 0.8;
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+
+  @apply fixed top-0 left-0 w-full h-full;
 }
 
 .fontForParagraph {
-  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-family: sans-serif;
   font-weight: 500;
+}
+
+.quizContainer {
+  @apply relative bottom-0 left-0 w-full mb-[-100px];
+}
+
+.paginationBtn {
+  @apply flex items-center justify-center text-stone-700 bg-stone-100 rounded-full w-6 hover:scale-105 hover:text-stone-900 mr-10;
 }

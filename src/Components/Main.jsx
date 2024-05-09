@@ -1,7 +1,7 @@
 import React from "react";
-import "./style.css";
-import tlou from "./pics/tlou.png";
-import tlou1 from "./pics/tlou1.jpg";
+import "../style.css";
+import Quiz from "./Quiz";
+import tlou1 from "../pics/tlou1.jpg";
 
 function Main() {
   const backgroundStyle = {
@@ -9,10 +9,12 @@ function Main() {
     backgroundSize: "cover",
     backgroundPosition: "center",
     height: "100vh", // Adjust height as needed
+    minHeight: "100vh",
+    overflowY: "auto", // Add overflow-y auto
   };
   return (
-    <body style={backgroundStyle} className="vingette">
-      <nav className="flex items-center justify-center flex-wrap p-6 mb-7">
+    <body style={backgroundStyle} className="vingette overflow-y-auto">
+      <nav className="flex items-center justify-center flex-wrap p-6 mb-7  ">
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <span className="font-bold text-6xl hover:cursor-pointer">TLOU</span>
         </div>
@@ -55,11 +57,13 @@ function Main() {
           </p>
         </div>
 
-        <div className="paginationButtons bg-slate-100">
-          <button>a</button>
-          <button>a</button>
-          <button>a</button>
-          <button>a</button>
+        <div className="flex justify-center items-end absolute bottom-0 p-5 mr-[-1450px]">
+          <div className="flex justify-center items-end absolute bottom-0 p-40 mr-[-1450px]">
+            <button className="paginationBtn">◉</button>
+            <button className="paginationBtn">‎</button>
+            <button className="paginationBtn">‎</button>
+            <button className="paginationBtn">‎</button>
+          </div>
         </div>
 
         {/* <div className="flex-column justify-center text-center items-center">
@@ -92,6 +96,7 @@ function Main() {
         </div>
       </div> */}
       {/* <img src={tlou1} alt="" srcset="" className="z-0" /> */}
+      <Quiz />
     </body>
   );
 }
