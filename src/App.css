@@ -13,6 +13,42 @@ body {
   scroll-behavior: smooth;
 }
 
+.backgroundStyle {
+  /* animation: change 15s infinite ease-in-out; */
+  background-image: url("../src/pics/tlou1.jpg");
+  background-size: "cover";
+  background-position: "center";
+  height: "100vh";
+  min-height: "100vh";
+  overflow-y: "auto";
+}
+
+@keyframes change {
+  0% {
+    background-image: url("../src/pics/tlou1.jpg");
+  }
+
+  20% {
+    background-image: url("../src/pics/tlou2.jpg");
+  }
+
+  40% {
+    background-image: url("../src/pics/tlou3.jpg");
+  }
+
+  60% {
+    background-image: url("../src/pics/tlou5.jpg");
+  }
+
+  80% {
+    background-image: url("../src/pics/tlou6.jpg");
+  }
+
+  100% {
+    background-image: url("../src/pics/tlou1.jpg"); /* Transition smoothly back to the initial state */
+  }
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -56,13 +92,16 @@ code {
 
 .vingette {
   opacity: 0.8;
-  animation: fadeInAnimation ease 2s;
+  /* animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
-  animation-fill-mode: forwards;
+  animation-fill-mode: forwards; */
+  transition: opacity 0.5s ease-in-out;
 
   @apply fixed top-0 left-0 w-full h-full;
 }
-
+.vingette.fade-in {
+  opacity: 1; /* Set opacity to 1 for fade-in effect */
+}
 .fontForParagraph {
   font-family: sans-serif;
   font-weight: 500;
