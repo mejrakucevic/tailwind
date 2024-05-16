@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../style.css";
 import Quiz from "./Quiz";
+import logo from "../pics/logo.png";
 import tlou1 from "../pics/tlou1.jpg";
 
 import tlou2 from "../pics/tlou2.jpg";
@@ -8,6 +9,7 @@ import tlou3 from "../pics/tlou3.jpg";
 
 import tlou5 from "../pics/tlou5.jpg";
 import tlou6 from "../pics/tlou6.jpg";
+import joel from "../pics/joel.jpg";
 
 function Main() {
   const bgImages = [tlou1, tlou2, tlou3, tlou5, tlou6];
@@ -23,6 +25,7 @@ function Main() {
       }, 500);
     }, 0);
   };
+
   const backgroundStyle = {
     backgroundImage: `url(${bgImages[currentBgIndex]})`,
     backgroundSize: "cover",
@@ -32,6 +35,7 @@ function Main() {
     overflowY: "auto",
     opacity: 1,
     transition: "opacity 0.5s ease-in-out",
+    position: "relative", // Ensure proper positioning of parallax element
   };
 
   return (
@@ -40,7 +44,7 @@ function Main() {
         <nav className="flex items-center justify-center flex-wrap p-6 mb-7  ">
           <div className="flex items-center flex-shrink-0 text-white mr-6">
             <span className="font-bold text-6xl hover:cursor-pointer">
-              TLOU
+              <img src={logo} alt="" className="w-12 mr-3" />
             </span>
           </div>
 
@@ -69,7 +73,7 @@ function Main() {
         </nav>
         <div className="container h-screen flex justify-left items-center">
           <div className="mb-80 text-stone-200 text-2xl">
-            <h1 className="text-5xl font-bold mb-5">The Last Of Us</h1>
+            <h1 className="text-5xl font-bold mb-7">The Last Of Us ᖭ༏ᖫ</h1>
             <p className="fontForParagraph leading-relaxed shadow-ms">
               Experience the emotional storytelling and unforgettable characters
               <br /> in The Last of Us™, winner of over 200 Game of the Year
@@ -80,14 +84,14 @@ function Main() {
               However, what starts as a small job soon transforms into a brutal
               cross-country journey.
             </p>
-            <button className="py-4 px-4 rounded-xl mt-5 hover:text-stone-200 hover:bg-stone-900 text-stone-900 bg-stone-200">
+            <button className="py-4 px-4 rounded-xl mt-8 hover:text-stone-200 hover:bg-stone-900 text-stone-900 bg-stone-200">
               Watch Trailer
             </button>
           </div>
 
           <div className="flex justify-center items-end absolute bottom-0 p-5 mr-[-1450px]">
             <div className="flex justify-center items-end absolute bottom-0 p-40 mr-[-1450px]">
-              <button className="paginationBtn">◉</button>
+              <button className="paginationBtn"></button>
               <button className="paginationBtn" onClick={changeBg}>
                 ‎
               </button>
@@ -133,7 +137,21 @@ function Main() {
         </div>
       </div> */}
         {/* <img src={tlou1} alt="" srcset="" className="z-0" /> */}
-        <Quiz />
+
+        <div className="relative z-2 flex justify-center items-center">
+          <img src={joel} alt="" className="w-screen max-h-fit" />
+          <div className="textContainer absolute">
+            <h1 className=" text-white">Joel</h1>
+            <p className="text-white">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
+              commodi, <br />
+              necessitatibus nesciunt aliquam velit nostrum saepe,
+              <br />
+              assumenda voluptatibus debitis atque qui nihil quo veritatis
+              praesentium ut? Nisi neque quasi rerum!
+            </p>
+          </div>
+        </div>
       </div>
     </body>
   );

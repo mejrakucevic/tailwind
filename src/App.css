@@ -112,5 +112,5 @@ code {
 }
 
 .paginationBtn {
-  @apply flex items-center justify-center text-stone-700 bg-stone-100 rounded-full w-6 hover:scale-105 hover:text-stone-900 mr-10;
+  @apply flex items-center justify-center text-stone-700 bg-stone-100 rounded-full w-4 h-4 hover:scale-105 hover:text-stone-900 mr-10;
 }
