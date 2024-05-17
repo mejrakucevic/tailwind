@@ -4,13 +4,20 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-image: url("./pics/tlou1.jpg"); */
   scroll-behavior: smooth;
+}
+
+body p {
+  font-family: monospace;
+}
+
+body a {
+  font-family: monospace;
+  font-size: 20px;
 }
 
 .backgroundStyle {
@@ -47,11 +54,6 @@ body {
   100% {
     background-image: url("../src/pics/tlou1.jpg"); /* Transition smoothly back to the initial state */
   }
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
 }
 
 @keyframes fadeInAnimation {
@@ -103,7 +105,7 @@ code {
   opacity: 1; /* Set opacity to 1 for fade-in effect */
 }
 .fontForParagraph {
-  font-family: sans-serif;
+  font-family: monospace;
   font-weight: 500;
 }
 

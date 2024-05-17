@@ -74,15 +74,14 @@ function Main() {
         <div className="container h-screen flex justify-left items-center">
           <div className="mb-80 text-stone-200 text-2xl">
             <h1 className="text-5xl font-bold mb-7">The Last Of Us ᖭ༏ᖫ</h1>
-            <p className="fontForParagraph leading-relaxed shadow-ms">
+            <p className="fontForParagraph leading-relaxed shadow-ms max-w-4xl mx-auto ">
               Experience the emotional storytelling and unforgettable characters
-              <br /> in The Last of Us™, winner of over 200 Game of the Year
-              awards. <br />
-              In a ravaged civilization, where infected and hardened survivors
-              run rampant, Joel, <br /> a weary protagonist, is hired to smuggle
-              14-year-old Ellie out of a military quarantine zone. <br />{" "}
-              However, what starts as a small job soon transforms into a brutal
-              cross-country journey.
+              in The Last of Us™, winner of over 200 Game of the Year awards. In
+              a ravaged civilization, where infected and hardened survivors run
+              rampant, Joel, a weary protagonist, is hired to smuggle
+              14-year-old Ellie out of a military quarantine zone. However, what
+              starts as a small job soon transforms into a brutal cross-country
+              journey.
             </p>
             <button className="py-4 px-4 rounded-xl mt-8 hover:text-stone-200 hover:bg-stone-900 text-stone-900 bg-stone-200">
               Watch Trailer
@@ -106,49 +105,22 @@ function Main() {
               </button>
             </div>
           </div>
-
-          {/* <div className="flex-column justify-center text-center items-center">
-          <h1 className="text-white underline font-bold text-6xl">
-            The Last Of Us
-          </h1>
-          <button className="btn btn-blue mx-6 text-white my-12">
-            Watch Trailer
-          </button>
-          <button className="btn btn-blue  mx-6 text-white">Buy TLOU</button>
         </div>
-        <div
-          className="bg-stone-100 border border-stone-400 text-stone-700 px-4 py-3 rounded relative my-5"
-          role="alert"
-        >
-          <strong className="font-bold">CLICKER COMING</strong>
-          <span className="block sm:inline">Please be aware</span>
-        </div> */}
-        </div>
-
-        {/* <div className="max-w-sm mx-auto flex p-10 bg-white rounded-lg shadow-xl">
-        <div className="flex-shrink-0">
-          <img src={tlou} alt="" className="w-26 h-32" />
-        </div>
-        <div className="ml-6 pt-4">
-          <h4 className="text-3xl text-stone-800">Ellie</h4>
-          <p className="text-base text-stone-600">
-            Lorem ipsum dolor sit amet.
-          </p>
-        </div>
-      </div> */}
-        {/* <img src={tlou1} alt="" srcset="" className="z-0" /> */}
 
         <div className="relative z-2 flex justify-center items-center">
           <img src={joel} alt="" className="w-screen max-h-fit" />
-          <div className="textContainer absolute">
-            <h1 className=" text-white">Joel</h1>
-            <p className="text-white">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugiat
-              commodi, <br />
-              necessitatibus nesciunt aliquam velit nostrum saepe,
-              <br />
-              assumenda voluptatibus debitis atque qui nihil quo veritatis
-              praesentium ut? Nisi neque quasi rerum!
+          <div className="absolute right-0 mr-24 mb-56">
+            <h1 className=" text-white text-5xl mb-4">Joel</h1>
+            <p className="text-white max-w-2xl mx-auto text-left text-2xl">
+              A brutal survivor with few moral lines left to cross. Joel, now in
+              his late 40s, has been hardened by the ravages of the fungal
+              pandemic that has devastated civilization as we know it. He’s lost
+              friends, family, and everything he valued in life. Living in one
+              of few remaining military-controlled quarantine zones, he operates
+              as a black market smuggler, dealing in contraband, taking numerous
+              de-humanizing jobs over the years to survive in this new
+              post-pandemic world. Joel’s conscience slowly dwindles away as he
+              shuts down his emotions to cope to his new life.
             </p>
           </div>
         </div>
