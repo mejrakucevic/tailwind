@@ -3,16 +3,16 @@ import "../style.css";
 import Quiz from "./Quiz";
 import logo from "../pics/logo.png";
 import tlou1 from "../pics/tlou1.jpg";
-
 import tlou2 from "../pics/tlou2.jpg";
 import tlou3 from "../pics/tlou3.jpg";
-
 import tlou5 from "../pics/tlou5.jpg";
 import tlou6 from "../pics/tlou6.jpg";
 import joel from "../pics/joel.jpg";
+import ellie from "../pics/ellie.png";
+import bg from "../pics/bg70.jpg";
 
 function Main() {
-  const bgImages = [tlou1, tlou2, tlou3, tlou5, tlou6];
+  const bgImages = [bg, tlou1, tlou2, tlou3, tlou5, tlou6];
 
   const [currentBgIndex, setCurrentBgIndex] = useState(0);
 
@@ -36,6 +36,12 @@ function Main() {
     opacity: 1,
     transition: "opacity 0.5s ease-in-out",
     position: "relative", // Ensure proper positioning of parallax element
+  };
+
+  const handleTrailerLink = () => {
+    const trailer =
+      "https://www.youtube.com/watch?v=WxjeV10H1F0&ab_channel=PlayStation";
+    window.open(trailer, "_blank");
   };
 
   return (
@@ -83,14 +89,17 @@ function Main() {
               starts as a small job soon transforms into a brutal cross-country
               journey.
             </p>
-            <button className="py-4 px-4 rounded-xl mt-8 hover:text-stone-200 hover:bg-stone-900 text-stone-900 bg-stone-200">
+            <button
+              onClick={handleTrailerLink}
+              className="py-4 px-4 rounded-xl mt-8 hover:text-stone-200 hover:bg-stone-900 text-stone-900 bg-stone-200"
+            >
               Watch Trailer
             </button>
           </div>
 
           <div className="flex justify-center items-end absolute bottom-0 p-5 mr-[-1450px]">
             <div className="flex justify-center items-end absolute bottom-0 p-40 mr-[-1450px]">
-              <button className="paginationBtn"></button>
+              <button className="paginationBtn" onClick={changeBg}></button>
               <button className="paginationBtn" onClick={changeBg}>
                 ‎
               </button>
@@ -121,6 +130,23 @@ function Main() {
               de-humanizing jobs over the years to survive in this new
               post-pandemic world. Joel’s conscience slowly dwindles away as he
               shuts down his emotions to cope to his new life.
+            </p>
+          </div>
+        </div>
+
+        <div className="relative z-2 flex justify-center items-center">
+          <img src={ellie} alt="" className="w-screen max-h-fit" />
+          <div className="absolute right-0 mr-24 mb-56">
+            <h1 className=" text-white text-5xl mb-4">Ellie</h1>
+            <p className="text-white max-w-2xl mx-auto text-left text-2xl">
+              A brave, 14 year old girl, Ellie has grown up in this harsh world
+              and it is all she has ever known. She’s an orphan who was raised
+              in a boarding school run by the military within the bounds of the
+              quarantine zone. Naïve and curious about the outside world, she is
+              wise beyond her years and highly capable of taking care of herself
+              and those around her. Obsessed with comic books, CDs, and other
+              pop culture, her knowledge base is filled by the remnants of a
+              world that no longer exists.
             </p>
           </div>
         </div>
